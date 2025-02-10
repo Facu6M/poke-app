@@ -1,0 +1,118 @@
+.pokemon-detail-container {
+  padding: 30px;
+  max-width: 700px;
+  margin: 40px auto;
+  font-family: "Helvetica Neue", sans-serif;
+  text-align: center;
+  background-color: #ffffff;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pokemon-name {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.pokemon-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  transition: transform 0.3s;
+}
+
+.pokemon-image:hover {
+  transform: scale(1.1);
+}
+
+.pokemon-info {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.pokemon-info h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #007bff;
+}
+
+.pokemon-types,
+.pokemon-abilities,
+.pokemon-stats {
+  margin-bottom: 30px;
+}
+
+.types-container,
+.abilities-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.type-card,
+.ability-card {
+  background-color: #f1f1f1;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.type-card:hover,
+.ability-card:hover {
+  transform: scale(1.1);
+}
+
+.type-fire {
+  background-color: #f8a72c;
+  color: white;
+}
+
+.type-water {
+  background-color: #67a7f0;
+  color: white;
+}
+
+.type-grass {
+  background-color: #78c850;
+  color: white;
+}
+
+.pokemon-stats ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  font-size: 16px;
+}
+
+.favorite-button {
+  padding: 12px 25px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px);
+}
+
+.favorite-button:active {
+  transform: translateY(1px);
+}

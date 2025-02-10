@@ -1,0 +1,82 @@
+.favorites-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+  font-family: "Helvetica Neue", sans-serif;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.favorites-list {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite-item {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.favorite-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.favorite-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.favorite-link {
+  font-size: 18px;
+  font-weight: 500;
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+.favorite-link:hover {
+  text-decoration: underline;
+}
+
+.remove-favorite-button {
+  padding: 8px 15px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.remove-favorite-button:hover {
+  background-color: #e63946;
+  transform: translateY(-2px);
+}
+
+.remove-favorite-button:active {
+  transform: translateY(1px);
+}
